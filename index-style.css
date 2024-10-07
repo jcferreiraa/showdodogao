@@ -8,7 +8,7 @@
 }
 
 body {
-    background: url(/show\ do\ dogão.jpg) no-repeat center center; /* Imagem para dispositivos maiores */
+    background: url(/show do dogão.jpg) no-repeat center center; /* Imagem para dispositivos maiores */
     background-size: cover;
     background-attachment: scroll; 
     background-position: center;
@@ -68,7 +68,7 @@ footer {
 /* Imagem para dispositivos menores (largura de até 768px, como smartphones e tablets) */
 @media (max-width: 768px) {
     body {
-        background: url(/Design\ sem\ nome.jpg) no-repeat center center; /* Imagem para dispositivos menores */
+        background: url(/Design sem nome.jpg) no-repeat center center; /* Imagem para dispositivos menores */
         background-size: cover;
     }
 }
