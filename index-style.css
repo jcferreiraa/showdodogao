@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body {
+    background: url(/show\ do\ dogão.jpg) no-repeat center center; /* Imagem para dispositivos maiores */
+    background-size: cover;
+    background-attachment: scroll; 
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+#span1 {
+    height: 100vh; /* Ajusta a altura ao tamanho da tela */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+main {
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo branco com opacidade para destacar o conteúdo */
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 300px;
+    min-height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona sombra suave para destacar */
+}
+
+h2 {
+    color: white;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+}
+
+button {
+    font-size: 140%;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #008CCC;
+    color: white;
+}
+
+footer {
+    color: white;
+}
+
+/* Imagem para dispositivos menores (largura de até 768px, como smartphones e tablets) */
+@media (max-width: 768px) {
+    body {
+        background: url(/Design\ sem\ nome.jpg) no-repeat center center; /* Imagem para dispositivos menores */
+        background-size: cover;
+    }
+}

@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(90deg, rgba(91,30,159,1) 0%, rgba(77,39,182,1) 100%);
+}
+
+#span1 {
+  height: 96.08vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+}
+
+body h2 {
+  color: white;
+}
+
+main {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 500px; /* Aumentei para 500px para dar mais espaço */
+  min-height: 300px; /* Aumentei a altura mínima */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow-y: auto; /* Adiciona rolagem automática, se necessário */
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+}
+
+.spnQtd {
+  text-align: end;
+  font-size: 18px;
+}
+
+.question {
+  font-size: 18px;
+  text-align: center;
+  word-wrap: break-word; /* Quebra de linha para perguntas longas */
+  padding: 10px; /* Espaço extra para as perguntas */
+  color: black;
+}
+
+.answers {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Mais espaço entre as respostas */
+}
+
+button {
+  width: 100%;
+  text-align: start;
+  padding: 10px; /* Aumentei o padding para botões maiores */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #008CCC;
+  color: white;
+  transition: background-color 0.3s ease;
+  font-size: 16px; /* Tamanho de fonte maior para botões */
+}
+
+/* Cor verde para resposta correta */
+button.correct {
+  background-color: green;
+}
+
+/* Cor vermelha para resposta errada */
+button.incorrect {
+  background-color: red;
+}
+
+button:hover {
+  background-color: #005f99;
+}
+
+.finish {
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.finish span {
+  text-align: center;
+  font-size: 20px;
+}
+
+.finish button {
+  text-align: center;
+  padding: 10px;
+  font-size: 16px;
+}
+
+footer {
+  color: white;
+  margin-top: 20px;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* Efeito de brilho verde para acertos */
+.question.correct {
+  box-shadow: 0px 0px 15px 5px rgba(0, 255, 0, 0.75);
+}
+
+/* Efeito de brilho vermelho para erros */
+.question.incorrect {
+  box-shadow: 0px 0px 15px 5px rgba(255, 0, 0, 0.75);
+}
+
+/* Adicionando o canvas para os fogos de artifício */
+#fireworksCanvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 999;
+}
