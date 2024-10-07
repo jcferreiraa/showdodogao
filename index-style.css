@@ -68,7 +68,7 @@ footer {
 /* Imagem para dispositivos menores (largura de até 768px, como smartphones e tablets) */
 @media (max-width: 768px) {
     body {
-        background: url(/Design sem nome.jpg) no-repeat center center; /* Imagem para dispositivos menores */
+        background: url'https://drive.google.com/uc?export=view&id=10QsybBMycfIqFop8ViFu4pSNQZxKXLfe') no-repeat center center; /* Imagem para dispositivos menores */
         background-size: cover;
     }
 }
